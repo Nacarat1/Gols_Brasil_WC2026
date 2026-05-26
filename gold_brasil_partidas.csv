@@ -1,0 +1,360 @@
+date,tournament,adversario,categoria_adversario,rank,gols_brasil,gols_adversario
+2001-03-03,Friendly,USA,B,16.0,2.0,1.0
+2001-03-07,Friendly,Mexico,B,12.0,3.0,3.0
+2001-03-28,FIFA World Cup qualification,Ecuador,D,53.0,0.0,1.0
+2001-04-25,FIFA World Cup qualification,Peru,D,50.0,1.0,1.0
+2001-05-31,Confederations Cup,Cameroon,C,37.0,2.0,0.0
+2001-06-02,Confederations Cup,Canada,E,71.0,0.0,0.0
+2001-06-04,Confederations Cup,Japan,D,44.0,0.0,0.0
+2001-06-07,Confederations Cup,France,A,1.0,1.0,2.0
+2001-06-09,Confederations Cup,Australia,E,68.0,0.0,1.0
+2001-07-01,FIFA World Cup qualification,Uruguay,C,40.0,0.0,1.0
+2001-07-12,Copa América,Mexico,B,15.0,0.0,1.0
+2001-07-15,Copa América,Peru,D,57.0,2.0,0.0
+2001-07-18,Copa América,Paraguay,A,8.0,3.0,1.0
+2001-07-23,Copa América,Honduras,D,48.0,0.0,2.0
+2001-08-09,Friendly,Panama,E,112.0,5.0,0.0
+2001-08-15,FIFA World Cup qualification,Paraguay,A,8.0,2.0,0.0
+2001-09-05,FIFA World Cup qualification,Argentina,A,3.0,1.0,2.0
+2001-10-07,FIFA World Cup qualification,Chile,C,37.0,2.0,0.0
+2001-11-07,FIFA World Cup qualification,Bolivia,E,81.0,1.0,3.0
+2001-11-14,FIFA World Cup qualification,Venezuela,E,89.0,3.0,0.0
+2002-01-31,Friendly,Bolivia,E,70.0,6.0,0.0
+2002-02-06,Friendly,Saudi Arabia,C,32.0,1.0,0.0
+2002-03-07,Friendly,Iceland,D,54.0,6.0,1.0
+2002-03-27,Friendly,Serbia,E,100.0,1.0,0.0
+2002-04-17,Friendly,Portugal,A,5.0,1.0,1.0
+2002-05-18,Friendly,Catalonia,E,100.0,3.0,1.0
+2002-05-25,Friendly,Malaysia,E,112.0,4.0,0.0
+2002-06-03,FIFA World Cup,Turkey,B,22.0,2.0,1.0
+2002-06-08,FIFA World Cup,China PR,D,50.0,4.0,0.0
+2002-06-13,FIFA World Cup,Costa Rica,C,29.0,5.0,2.0
+2002-06-17,FIFA World Cup,Belgium,B,23.0,2.0,0.0
+2002-06-21,FIFA World Cup,England,B,12.0,2.0,1.0
+2002-06-26,FIFA World Cup,Turkey,B,22.0,1.0,0.0
+2002-06-30,FIFA World Cup,Germany,B,11.0,2.0,0.0
+2002-08-21,Friendly,Paraguay,B,19.0,0.0,1.0
+2002-11-20,Friendly,Korea Republic,B,20.0,3.0,2.0
+2003-02-12,Friendly,China PR,E,64.0,0.0,0.0
+2003-03-29,Friendly,Portugal,B,12.0,1.0,2.0
+2003-04-30,Friendly,Mexico,A,9.0,0.0,0.0
+2003-06-11,Friendly,Nigeria,C,32.0,3.0,0.0
+2003-06-19,Confederations Cup,Cameroon,B,18.0,0.0,1.0
+2003-06-21,Confederations Cup,USA,A,10.0,1.0,0.0
+2003-06-23,Confederations Cup,Turkey,A,8.0,2.0,2.0
+2003-07-13,Gold Cup,Mexico,B,11.0,0.0,1.0
+2003-07-15,Gold Cup,Honduras,D,42.0,2.0,1.0
+2003-07-19,Gold Cup,Colombia,B,22.0,2.0,0.0
+2003-07-23,Gold Cup,USA,A,9.0,2.0,1.0
+2003-07-27,Gold Cup,Mexico,B,11.0,0.0,1.0
+2003-09-07,FIFA World Cup qualification,Colombia,B,24.0,2.0,1.0
+2003-09-10,FIFA World Cup qualification,Ecuador,C,37.0,1.0,0.0
+2003-10-12,Friendly,Jamaica,D,46.0,1.0,0.0
+2003-11-16,FIFA World Cup qualification,Peru,E,72.0,1.0,1.0
+2003-11-19,FIFA World Cup qualification,Uruguay,B,20.0,3.0,3.0
+2004-02-18,Friendly,Republic of Ireland,B,15.0,0.0,0.0
+2004-03-31,FIFA World Cup qualification,Paraguay,C,26.0,0.0,0.0
+2004-04-28,Friendly,Hungary,E,72.0,4.0,1.0
+2004-05-20,Friendly,France,A,2.0,0.0,0.0
+2004-05-25,Friendly,Catalonia,E,100.0,5.0,2.0
+2004-06-02,FIFA World Cup qualification,Argentina,A,5.0,3.0,1.0
+2004-06-06,FIFA World Cup qualification,Chile,E,77.0,1.0,1.0
+2004-07-08,Copa América,Chile,E,66.0,1.0,0.0
+2004-07-11,Copa América,Costa Rica,C,29.0,4.0,1.0
+2004-07-14,Copa América,Paraguay,C,29.0,1.0,2.0
+2004-07-18,Copa América,Mexico,A,6.0,4.0,0.0
+2004-07-21,Copa América,Uruguay,C,32.0,1.0,1.0
+2004-07-25,Copa América,Argentina,B,11.0,2.0,2.0
+2004-08-18,Friendly,Haiti,E,95.0,6.0,0.0
+2004-09-05,FIFA World Cup qualification,Bolivia,E,93.0,3.0,1.0
+2004-09-08,Friendly,Germany,B,11.0,1.0,1.0
+2004-10-09,FIFA World Cup qualification,Venezuela,D,59.0,5.0,2.0
+2004-10-13,FIFA World Cup qualification,Colombia,C,28.0,0.0,0.0
+2004-11-17,FIFA World Cup qualification,Ecuador,D,44.0,0.0,1.0
+2005-02-09,Lunar New Year Cup,Hong Kong,E,134.0,7.0,1.0
+2005-03-27,FIFA World Cup qualification,Peru,E,70.0,1.0,0.0
+2005-03-30,FIFA World Cup qualification,Uruguay,B,15.0,1.0,1.0
+2005-04-27,Friendly,Guatemala,D,60.0,3.0,0.0
+2005-06-05,FIFA World Cup qualification,Paraguay,C,29.0,4.0,1.0
+2005-06-08,FIFA World Cup qualification,Argentina,A,3.0,1.0,3.0
+2005-06-16,Confederations Cup,Greece,B,13.0,3.0,0.0
+2005-06-19,Confederations Cup,Mexico,A,6.0,0.0,1.0
+2005-06-22,Confederations Cup,Japan,B,18.0,2.0,2.0
+2005-06-25,Confederations Cup,Germany,B,21.0,3.0,2.0
+2005-06-29,Confederations Cup,Argentina,A,3.0,4.0,1.0
+2005-08-17,Friendly,Croatia,B,20.0,1.0,1.0
+2005-09-04,FIFA World Cup qualification,Chile,E,73.0,5.0,0.0
+2005-10-09,FIFA World Cup qualification,Bolivia,E,100.0,1.0,1.0
+2005-10-12,FIFA World Cup qualification,Venezuela,D,57.0,3.0,0.0
+2005-11-12,Friendly,United Arab Emirates,E,89.0,8.0,0.0
+2006-03-01,Friendly,Russia,C,34.0,1.0,0.0
+2006-06-04,Friendly,New Zealand,E,118.0,4.0,0.0
+2006-06-13,FIFA World Cup,Croatia,B,23.0,1.0,0.0
+2006-06-18,FIFA World Cup,Australia,D,42.0,2.0,0.0
+2006-06-22,FIFA World Cup,Japan,B,18.0,4.0,1.0
+2006-06-27,FIFA World Cup,Ghana,D,48.0,3.0,0.0
+2006-07-01,FIFA World Cup,France,A,8.0,0.0,1.0
+2006-08-16,Friendly,Norway,D,49.0,1.0,1.0
+2006-09-03,Friendly,Argentina,A,3.0,3.0,0.0
+2006-09-05,Friendly,Wales,D,56.0,2.0,0.0
+2006-10-10,Friendly,Ecuador,C,30.0,2.0,1.0
+2006-11-15,Friendly,Switzerland,B,15.0,2.0,1.0
+2007-02-06,Friendly,Portugal,A,8.0,0.0,2.0
+2007-03-24,Friendly,Chile,C,32.0,4.0,0.0
+2007-03-27,Friendly,Ghana,B,19.0,1.0,0.0
+2007-06-01,Friendly,England,A,8.0,1.0,1.0
+2007-06-05,Friendly,Turkey,B,19.0,0.0,0.0
+2007-06-27,Copa América,Mexico,C,26.0,0.0,2.0
+2007-07-01,Copa América,Chile,D,53.0,3.0,0.0
+2007-07-04,Copa América,Ecuador,D,44.0,1.0,0.0
+2007-07-07,Copa América,Chile,D,53.0,6.0,1.0
+2007-07-10,Copa América,Uruguay,C,30.0,2.0,2.0
+2007-07-15,Copa América,Argentina,A,5.0,3.0,0.0
+2007-08-22,Friendly,Algeria,E,73.0,2.0,0.0
+2007-09-09,Friendly,USA,B,17.0,4.0,2.0
+2007-09-12,Friendly,Mexico,B,11.0,3.0,1.0
+2007-10-14,FIFA World Cup qualification,Colombia,B,24.0,0.0,0.0
+2007-10-17,FIFA World Cup qualification,Ecuador,D,57.0,5.0,0.0
+2007-11-18,FIFA World Cup qualification,Peru,E,61.0,1.0,1.0
+2007-11-21,FIFA World Cup qualification,Uruguay,B,17.0,2.0,1.0
+2008-02-06,Friendly,Republic of Ireland,C,36.0,1.0,0.0
+2008-03-26,Friendly,Sweden,B,24.0,1.0,0.0
+2008-05-31,Friendly,Canada,E,62.0,3.0,2.0
+2008-06-06,Friendly,Venezuela,E,63.0,0.0,2.0
+2008-06-15,FIFA World Cup qualification,Paraguay,C,28.0,0.0,2.0
+2008-06-18,FIFA World Cup qualification,Argentina,A,1.0,0.0,0.0
+2008-09-07,FIFA World Cup qualification,Chile,C,40.0,3.0,0.0
+2008-09-10,FIFA World Cup qualification,Bolivia,E,71.0,0.0,0.0
+2008-10-12,FIFA World Cup qualification,Venezuela,E,66.0,4.0,0.0
+2008-10-15,FIFA World Cup qualification,Colombia,C,33.0,0.0,0.0
+2008-11-19,Friendly,Portugal,A,10.0,6.0,2.0
+2009-02-10,Friendly,Italy,A,4.0,2.0,0.0
+2009-03-29,FIFA World Cup qualification,Ecuador,C,39.0,1.0,1.0
+2009-04-01,FIFA World Cup qualification,Peru,E,77.0,3.0,0.0
+2009-06-06,FIFA World Cup qualification,Uruguay,B,17.0,4.0,0.0
+2009-06-10,FIFA World Cup qualification,Paraguay,B,13.0,2.0,1.0
+2009-06-15,Confederations Cup,Egypt,C,40.0,4.0,3.0
+2009-06-18,Confederations Cup,USA,B,14.0,3.0,0.0
+2009-06-21,Confederations Cup,Italy,A,4.0,3.0,0.0
+2009-06-25,Confederations Cup,South Africa,E,72.0,1.0,0.0
+2009-06-28,Confederations Cup,USA,B,14.0,3.0,2.0
+2009-08-12,Friendly,Estonia,E,112.0,1.0,0.0
+2009-09-05,FIFA World Cup qualification,Argentina,A,8.0,3.0,1.0
+2009-09-09,FIFA World Cup qualification,Chile,B,21.0,4.0,2.0
+2009-10-11,FIFA World Cup qualification,Bolivia,D,59.0,1.0,2.0
+2009-10-14,FIFA World Cup qualification,Venezuela,D,51.0,0.0,0.0
+2009-11-14,Friendly,England,A,7.0,1.0,0.0
+2009-11-17,Friendly,Oman,E,79.0,2.0,0.0
+2010-03-02,Friendly,Republic of Ireland,C,37.0,2.0,0.0
+2010-06-02,Friendly,Zimbabwe,E,110.0,3.0,0.0
+2010-06-07,Friendly,Tanzania,E,108.0,5.0,1.0
+2010-06-15,FIFA World Cup,Korea DPR,E,105.0,2.0,1.0
+2010-06-20,FIFA World Cup,Côte d'Ivoire,C,27.0,3.0,1.0
+2010-06-25,FIFA World Cup,Portugal,A,3.0,0.0,0.0
+2010-06-28,FIFA World Cup,Chile,B,18.0,3.0,0.0
+2010-07-02,FIFA World Cup,Netherlands,A,4.0,1.0,2.0
+2010-08-10,Friendly,USA,B,13.0,2.0,0.0
+2010-10-07,Friendly,Iran,E,100.0,3.0,0.0
+2010-10-11,Friendly,Ukraine,C,26.0,2.0,0.0
+2010-11-17,Friendly,Argentina,A,5.0,0.0,1.0
+2011-02-09,Friendly,France,B,19.0,0.0,1.0
+2011-03-27,Friendly,Scotland,D,50.0,2.0,0.0
+2011-06-04,Friendly,Netherlands,A,2.0,0.0,0.0
+2011-06-07,Friendly,Romania,D,42.0,1.0,0.0
+2011-07-03,Copa América,Venezuela,E,69.0,0.0,0.0
+2011-07-09,Copa América,Paraguay,C,32.0,2.0,2.0
+2011-07-13,Copa América,Ecuador,E,68.0,4.0,2.0
+2011-07-17,Copa América,Paraguay,C,32.0,0.0,0.0
+2011-08-10,Friendly,Germany,A,3.0,2.0,3.0
+2011-09-05,Friendly,Ghana,C,36.0,1.0,0.0
+2011-09-14,Superclásico de las Américas,Argentina,A,9.0,0.0,0.0
+2011-09-28,Superclásico de las Américas,Argentina,A,10.0,2.0,0.0
+2011-10-07,Friendly,Costa Rica,D,57.0,1.0,0.0
+2011-10-11,Friendly,Mexico,B,20.0,2.0,1.0
+2011-11-10,Friendly,Gabon,E,68.0,2.0,0.0
+2011-11-14,Friendly,Egypt,C,29.0,2.0,0.0
+2012-02-28,Friendly,Bosnia and Herzegovina,B,19.0,2.0,1.0
+2012-05-26,Friendly,Denmark,A,10.0,3.0,1.0
+2012-05-30,Friendly,USA,C,29.0,4.0,1.0
+2012-06-03,Friendly,Mexico,B,20.0,0.0,2.0
+2012-06-09,Friendly,Argentina,A,7.0,3.0,4.0
+2012-08-15,Friendly,Sweden,B,17.0,3.0,0.0
+2012-09-07,Friendly,South Africa,E,74.0,1.0,0.0
+2012-09-10,Friendly,China PR,E,78.0,8.0,0.0
+2012-09-19,Superclásico de las Américas,Argentina,A,7.0,2.0,1.0
+2012-10-11,Friendly,Iraq,E,80.0,6.0,0.0
+2012-10-16,Friendly,Japan,B,23.0,4.0,0.0
+2012-11-14,Friendly,Colombia,A,8.0,1.0,1.0
+2012-11-21,Superclásico de las Américas,Argentina,A,3.0,1.0,2.0
+2013-02-06,Friendly,England,A,6.0,1.0,2.0
+2013-03-21,Friendly,Italy,A,5.0,2.0,2.0
+2013-03-25,Friendly,Russia,A,10.0,1.0,1.0
+2013-04-06,Friendly,Bolivia,C,37.0,4.0,0.0
+2013-04-24,Friendly,Chile,B,23.0,2.0,2.0
+2013-06-02,Friendly,England,A,7.0,2.0,2.0
+2013-06-09,Friendly,France,B,18.0,3.0,0.0
+2013-06-15,Confederations Cup,Japan,C,32.0,3.0,0.0
+2013-06-19,Confederations Cup,Mexico,B,17.0,2.0,0.0
+2013-06-22,Confederations Cup,Italy,A,8.0,4.0,2.0
+2013-06-26,Confederations Cup,Uruguay,B,19.0,2.0,1.0
+2013-06-30,Confederations Cup,Spain,A,1.0,3.0,0.0
+2013-08-14,Friendly,Switzerland,B,15.0,0.0,1.0
+2013-09-07,Friendly,Australia,D,46.0,6.0,0.0
+2013-09-10,Friendly,Portugal,A,7.0,3.0,1.0
+2013-10-12,Friendly,Korea Republic,D,58.0,2.0,0.0
+2013-10-15,Friendly,Zambia,E,71.0,2.0,0.0
+2013-11-16,Friendly,Honduras,C,34.0,5.0,0.0
+2013-11-19,Friendly,Chile,B,12.0,2.0,1.0
+2014-03-05,Friendly,South Africa,E,64.0,5.0,0.0
+2014-06-03,Friendly,Panama,C,35.0,4.0,0.0
+2014-06-06,Friendly,Serbia,C,30.0,1.0,0.0
+2014-06-12,FIFA World Cup,Croatia,B,18.0,3.0,1.0
+2014-06-17,FIFA World Cup,Mexico,B,20.0,0.0,0.0
+2014-06-23,FIFA World Cup,Cameroon,D,56.0,4.0,1.0
+2014-06-28,FIFA World Cup,Chile,B,14.0,1.0,1.0
+2014-07-04,FIFA World Cup,Colombia,A,8.0,2.0,1.0
+2014-07-08,FIFA World Cup,Germany,A,2.0,1.0,7.0
+2014-07-12,FIFA World Cup,Netherlands,B,15.0,0.0,3.0
+2014-09-05,Friendly,Colombia,A,4.0,1.0,0.0
+2014-10-11,Superclásico de las Américas,Argentina,A,2.0,2.0,0.0
+2014-10-14,Friendly,Japan,D,48.0,4.0,0.0
+2014-11-12,Friendly,Turkey,D,46.0,4.0,0.0
+2014-11-18,Friendly,Austria,C,29.0,2.0,1.0
+2015-03-26,Friendly,France,A,8.0,3.0,1.0
+2015-03-29,Friendly,Chile,B,15.0,1.0,0.0
+2015-06-07,Friendly,Mexico,B,23.0,2.0,0.0
+2015-06-10,Friendly,Honduras,E,75.0,1.0,0.0
+2015-06-14,Copa América,Peru,E,61.0,2.0,1.0
+2015-06-17,Copa América,Colombia,A,4.0,0.0,1.0
+2015-06-21,Copa América,Venezuela,E,72.0,2.0,1.0
+2015-06-27,Copa América,Paraguay,E,85.0,1.0,1.0
+2015-09-05,Friendly,Costa Rica,C,39.0,1.0,0.0
+2015-09-08,Friendly,USA,C,28.0,4.0,1.0
+2015-10-08,FIFA World Cup qualification,Chile,A,9.0,0.0,2.0
+2015-10-13,FIFA World Cup qualification,Venezuela,E,69.0,3.0,1.0
+2015-11-13,FIFA World Cup qualification,Argentina,A,3.0,1.0,1.0
+2015-11-17,FIFA World Cup qualification,Peru,D,57.0,3.0,0.0
+2016-03-25,FIFA World Cup qualification,Uruguay,B,11.0,2.0,2.0
+2016-03-29,FIFA World Cup qualification,Paraguay,D,43.0,2.0,2.0
+2016-06-04,Copa América,Ecuador,B,13.0,0.0,0.0
+2016-06-08,Copa América,Haiti,E,74.0,7.0,1.0
+2016-06-12,Copa América,Peru,D,48.0,0.0,1.0
+2016-09-01,FIFA World Cup qualification,Ecuador,B,17.0,3.0,0.0
+2016-09-06,FIFA World Cup qualification,Colombia,A,3.0,2.0,1.0
+2016-10-06,FIFA World Cup qualification,Bolivia,E,75.0,5.0,0.0
+2016-10-11,FIFA World Cup qualification,Venezuela,D,60.0,2.0,0.0
+2016-11-10,FIFA World Cup qualification,Argentina,A,1.0,3.0,0.0
+2016-11-15,FIFA World Cup qualification,Peru,B,23.0,2.0,0.0
+2017-01-26,Friendly,Colombia,A,6.0,1.0,0.0
+2017-03-23,FIFA World Cup qualification,Uruguay,A,9.0,4.0,1.0
+2017-03-28,FIFA World Cup qualification,Paraguay,D,43.0,3.0,0.0
+2017-06-09,Superclásico de las Américas,Argentina,A,2.0,0.0,1.0
+2017-06-13,Friendly,Australia,D,48.0,4.0,0.0
+2017-08-31,FIFA World Cup qualification,Ecuador,C,32.0,2.0,0.0
+2017-09-05,FIFA World Cup qualification,Colombia,A,8.0,1.0,1.0
+2017-10-05,FIFA World Cup qualification,Bolivia,D,46.0,0.0,0.0
+2017-10-10,FIFA World Cup qualification,Chile,A,9.0,3.0,0.0
+2017-11-10,Friendly,Japan,D,44.0,3.0,1.0
+2017-11-14,Friendly,England,B,12.0,0.0,0.0
+2018-03-23,Friendly,Russia,E,63.0,3.0,0.0
+2018-03-27,Friendly,Germany,A,1.0,1.0,0.0
+2018-06-03,Friendly,Croatia,B,18.0,2.0,0.0
+2018-06-10,Friendly,Austria,C,26.0,3.0,0.0
+2018-06-17,FIFA World Cup,Switzerland,A,6.0,1.0,1.0
+2018-06-22,FIFA World Cup,Costa Rica,B,23.0,2.0,0.0
+2018-06-27,FIFA World Cup,Serbia,C,34.0,2.0,0.0
+2018-07-02,FIFA World Cup,Mexico,A,10.0,2.0,0.0
+2018-07-06,FIFA World Cup,Belgium,A,5.0,1.0,2.0
+2018-09-07,Friendly,USA,B,22.0,2.0,0.0
+2018-09-12,Friendly,El Salvador,E,72.0,5.0,0.0
+2018-10-12,Friendly,Saudi Arabia,E,71.0,2.0,0.0
+2018-10-16,Superclásico de las Américas,Argentina,B,11.0,1.0,0.0
+2018-11-16,Friendly,Uruguay,A,6.0,1.0,0.0
+2018-11-20,Friendly,Cameroon,D,51.0,1.0,0.0
+2019-03-23,Friendly,Panama,E,76.0,1.0,1.0
+2019-03-26,Friendly,Czech Republic,E,100.0,3.0,1.0
+2019-06-05,Friendly,Qatar,D,55.0,2.0,0.0
+2019-06-09,Friendly,Honduras,E,61.0,7.0,0.0
+2019-06-14,Copa América,Bolivia,E,62.0,3.0,0.0
+2019-06-18,Copa América,Venezuela,C,33.0,0.0,0.0
+2019-06-22,Copa América,Peru,B,21.0,5.0,0.0
+2019-06-27,Copa América,Paraguay,C,36.0,0.0,0.0
+2019-07-02,Copa América,Argentina,B,11.0,2.0,0.0
+2019-07-07,Copa América,Peru,B,21.0,3.0,1.0
+2019-09-06,Friendly,Colombia,A,8.0,2.0,2.0
+2019-09-10,Friendly,Peru,B,19.0,0.0,1.0
+2019-10-10,Friendly,Senegal,B,20.0,1.0,1.0
+2019-10-13,Friendly,Nigeria,C,34.0,1.0,1.0
+2019-11-15,Superclásico de las Américas,Argentina,A,9.0,0.0,1.0
+2019-11-19,Friendly,Korea Republic,C,39.0,3.0,0.0
+2020-10-09,FIFA World Cup qualification,Bolivia,E,75.0,5.0,0.0
+2020-10-13,FIFA World Cup qualification,Peru,B,22.0,4.0,2.0
+2020-11-13,FIFA World Cup qualification,Venezuela,C,28.0,1.0,0.0
+2020-11-17,FIFA World Cup qualification,Uruguay,A,7.0,2.0,0.0
+2021-06-04,FIFA World Cup qualification,Ecuador,D,53.0,2.0,0.0
+2021-06-08,FIFA World Cup qualification,Paraguay,C,35.0,2.0,0.0
+2021-06-13,Copa América,Venezuela,C,30.0,3.0,0.0
+2021-06-17,Copa América,Peru,C,27.0,4.0,0.0
+2021-06-23,Copa América,Colombia,B,15.0,2.0,1.0
+2021-06-27,Copa América,Ecuador,D,53.0,1.0,1.0
+2021-07-02,Copa América,Chile,B,19.0,1.0,0.0
+2021-07-05,Copa América,Peru,C,27.0,1.0,0.0
+2021-07-10,Copa América,Argentina,A,8.0,0.0,1.0
+2021-09-02,FIFA World Cup qualification,Chile,B,20.0,1.0,0.0
+2021-09-09,FIFA World Cup qualification,Peru,B,22.0,2.0,0.0
+2021-10-07,FIFA World Cup qualification,Venezuela,D,49.0,3.0,1.0
+2021-10-10,FIFA World Cup qualification,Colombia,B,16.0,0.0,0.0
+2021-10-14,FIFA World Cup qualification,Uruguay,B,12.0,4.0,1.0
+2021-11-11,FIFA World Cup qualification,Colombia,B,16.0,1.0,0.0
+2021-11-16,FIFA World Cup qualification,Argentina,A,6.0,0.0,0.0
+2022-01-27,FIFA World Cup qualification,Ecuador,D,46.0,1.0,1.0
+2022-02-01,FIFA World Cup qualification,Paraguay,D,43.0,4.0,0.0
+2022-03-24,FIFA World Cup qualification,Chile,C,26.0,4.0,0.0
+2022-03-29,FIFA World Cup qualification,Bolivia,E,76.0,4.0,0.0
+2022-06-02,Friendly,Korea Republic,C,29.0,5.0,1.0
+2022-06-06,Friendly,Japan,B,23.0,1.0,0.0
+2022-09-23,Friendly,Ghana,D,60.0,3.0,0.0
+2022-09-27,Friendly,Tunisia,C,30.0,5.0,1.0
+2022-11-24,FIFA World Cup,Serbia,B,21.0,2.0,0.0
+2022-11-28,FIFA World Cup,Switzerland,B,15.0,1.0,0.0
+2022-12-02,FIFA World Cup,Cameroon,D,43.0,0.0,1.0
+2022-12-05,FIFA World Cup,Korea Republic,C,28.0,4.0,1.0
+2022-12-09,FIFA World Cup,Croatia,B,12.0,1.0,1.0
+2023-03-25,Friendly,Morocco,B,11.0,1.0,2.0
+2023-06-17,Friendly,Guinea,E,79.0,4.0,1.0
+2023-06-20,Friendly,Senegal,B,18.0,2.0,4.0
+2023-09-08,FIFA World Cup qualification,Bolivia,E,83.0,5.0,1.0
+2023-09-12,FIFA World Cup qualification,Peru,B,21.0,1.0,0.0
+2023-10-12,FIFA World Cup qualification,Venezuela,D,53.0,1.0,1.0
+2023-10-17,FIFA World Cup qualification,Uruguay,B,17.0,0.0,2.0
+2023-11-16,FIFA World Cup qualification,Colombia,B,17.0,1.0,2.0
+2023-11-21,FIFA World Cup qualification,Argentina,A,1.0,0.0,1.0
+2024-03-23,Friendly,England,A,3.0,1.0,0.0
+2024-03-26,Friendly,Spain,A,8.0,3.0,3.0
+2024-06-08,Friendly,Mexico,B,14.0,3.0,2.0
+2024-06-12,Friendly,USA,B,11.0,1.0,1.0
+2024-06-24,Copa América,Costa Rica,D,52.0,0.0,0.0
+2024-06-28,Copa América,Paraguay,D,56.0,4.0,1.0
+2024-07-02,Copa América,Colombia,B,12.0,1.0,1.0
+2024-07-06,Copa América,Uruguay,B,15.0,0.0,0.0
+2024-09-06,FIFA World Cup qualification,Ecuador,C,31.0,1.0,0.0
+2024-09-10,FIFA World Cup qualification,Paraguay,D,56.0,0.0,1.0
+2024-10-10,FIFA World Cup qualification,Chile,D,42.0,2.0,1.0
+2024-10-15,FIFA World Cup qualification,Peru,C,32.0,4.0,0.0
+2024-11-14,FIFA World Cup qualification,Venezuela,D,54.0,1.0,1.0
+2024-11-19,FIFA World Cup qualification,Uruguay,B,15.0,1.0,1.0
+2025-03-20,FIFA World Cup qualification,Colombia,B,12.0,2.0,1.0
+2025-03-25,FIFA World Cup qualification,Argentina,A,1.0,1.0,4.0
+2025-06-05,FIFA World Cup qualification,Ecuador,C,31.0,0.0,0.0
+2025-06-10,FIFA World Cup qualification,Paraguay,D,56.0,1.0,0.0
+2025-09-04,FIFA World Cup qualification,Chile,D,42.0,3.0,0.0
+2025-09-09,FIFA World Cup qualification,Bolivia,E,85.0,0.0,1.0
+2025-10-10,Friendly,Korea Republic,B,23.0,5.0,0.0
+2025-10-14,Kirin Cup,Japan,B,18.0,2.0,3.0
+2025-11-15,Friendly,Senegal,B,17.0,2.0,0.0
+2025-11-18,Friendly,Tunisia,D,41.0,1.0,1.0
+2026-03-26,Friendly,France,A,2.0,1.0,2.0
+2026-03-31,Friendly,Croatia,A,10.0,3.0,1.0
+2026-06-13,FIFA World Cup,Morocco,B,13.0,,
+2026-06-19,FIFA World Cup,Haiti,E,90.0,,
+2026-06-24,FIFA World Cup,Scotland,C,39.0,,

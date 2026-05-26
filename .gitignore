@@ -1,0 +1,23 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+env/
+venv/
+ENV/
+
+# Kaggle credentials and API key (CRITICAL)
+kaggle.json
+
+# Large raw datasets from Kaggle (can be downloaded using download.py)
+results.csv
+fifa_ranking-2024-04-04.csv
+Fifa_ranking-2024-04-04.csv
+goalscorers.csv
+shootouts.csv
+former_names.csv
+*.zip
+
+# Simulation outputs (large generated files)
+resultados_simulacao.csv
