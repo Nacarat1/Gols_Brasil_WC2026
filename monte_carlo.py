@@ -177,7 +177,7 @@ def simular_gols_brasil(n_simulacoes=100_000):
     # --- Resumo dos parâmetros ---
     print("\n--- PARÂMETROS DA SIMULAÇÃO ---")
     print("\nFase de Grupos (adversários reais 2026):")
-    print(f"  Marrocos  (cat. B, rank ~13) : lambda = {lambdas['B']:.3f}")
+    print(f"  Marrocos  (cat. A, rank ~8)  : lambda = {lambdas['A']:.3f}")
     print(f"  Haiti     (cat. E, rank ~90) : lambda = {lambdas['E']:.3f}")
     print(f"  Escócia   (cat. C, rank ~39) : lambda = {lambdas['C']:.3f}")
 
@@ -203,7 +203,7 @@ def simular_gols_brasil(n_simulacoes=100_000):
         gols = 0
 
         # Fase de Grupos: 3 jogos com adversários reais da Copa 2026
-        gols += np.random.poisson(lambdas['B'])  # vs Marrocos
+        gols += np.random.poisson(lambdas['A'])  # vs Marrocos
         gols += np.random.poisson(lambdas['E'])  # vs Haiti
         gols += np.random.poisson(lambdas['C'])  # vs Escócia
 

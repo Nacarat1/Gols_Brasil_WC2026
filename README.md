@@ -101,7 +101,7 @@ Em cada fase eliminatória, a probabilidade de enfrentar adversários das catego
 
 ### 6. Cenários de Simulação (Grupos de 2026)
 A simulação considera os adversários definidos/esperados para a fase de grupos do Brasil na Copa de 2026:
-* **Jogo 1**: Adversário de Categoria B (ex: Marrocos)
+* **Jogo 1**: Adversário de Categoria A (ex: Marrocos)
 * **Jogo 2**: Adversário de Categoria E (ex: Haiti)
 * **Jogo 3**: Adversário de Categoria C (ex: Escócia)
 
@@ -111,10 +111,10 @@ A simulação considera os adversários definidos/esperados para a fase de grupo
 
 Após rodar **100.000 iterações** da campanha do Brasil na Copa do Mundo de 2026, os resultados consolidados mostram:
 
-* **Média de Gols Marcados**: ~11.65 gols
+* **Média de Gols Marcados**: ~11.54 gols
 * **Moda (Valor mais Provável)**: 11 gols
 * **Mediana (P50)**: 11 gols
-* **Intervalo de Confiança (P10 - P90)**: Entre 7 e 17 gols marcados
+* **Intervalo de Confiança (P10 - P90)**: Entre 6 e 17 gols marcados
 
 Este comportamento reflete a alta probabilidade histórica de a Seleção Brasileira avançar até as fases finais (Quartas de Final ou Semifinal/Final), acumulando assim mais partidas e consequentemente mais gols ao longo do torneio.
 
