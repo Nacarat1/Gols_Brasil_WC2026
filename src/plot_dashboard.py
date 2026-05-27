@@ -3,13 +3,20 @@ import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 from scipy.interpolate import make_interp_spline
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_DATA_DIR = os.path.join(BASE_DIR, 'data', 'output')
 
 # 1. Carregar os dados simulados
 try:
-    df = pd.read_csv('resultados_simulacao.csv')
+    df = pd.read_csv(os.path.join(OUTPUT_DATA_DIR, 'resultados_simulacao.csv'))
     gols = df['gols_totais'].values
 except FileNotFoundError:
-    import monte_carlo
+    try:
+        import monte_carlo
+    except ImportError:
+        from src import monte_carlo
     gols = np.array(monte_carlo.simular_gols_brasil())
 
 # 2. Métricas
@@ -74,7 +81,7 @@ for spine in ax_kpi1.spines.values():
     spine.set_linewidth(1)
 ax_kpi1.spines['left'].set_color(accent_orange)
 ax_kpi1.spines['left'].set_linewidth(4)
-ax_kpi1.text(0.08, 0.65, 'CENÁRIO PESSIMISTA (P10)', fontsize=9.5, color=muted_text, fontweight='bold')
+ax_kpi1.text(0.08, 0.65, 'CENÁRIO PESSIMISTA (P10)', fontsize=11, color=muted_text, fontweight='bold')
 ax_kpi1.text(0.08, 0.18, f'{p10} Gols', fontsize=20, color=accent_orange, fontweight='black')
 
 # Card 2: P50 (Mais Provável/Mediana)
@@ -87,7 +94,7 @@ for spine in ax_kpi2.spines.values():
     spine.set_linewidth(1)
 ax_kpi2.spines['left'].set_color(primary_blue)
 ax_kpi2.spines['left'].set_linewidth(4)
-ax_kpi2.text(0.08, 0.65, 'VALOR PROVÁVEL (P50)', fontsize=9.5, color=muted_text, fontweight='bold')
+ax_kpi2.text(0.08, 0.65, 'VALOR PROVÁVEL (P50)', fontsize=11, color=muted_text, fontweight='bold')
 ax_kpi2.text(0.08, 0.18, f'{p50} Gols', fontsize=20, color=light_text, fontweight='black')
 
 # Card 3: P90 (Otimista)
@@ -100,7 +107,7 @@ for spine in ax_kpi3.spines.values():
     spine.set_linewidth(1)
 ax_kpi3.spines['left'].set_color(accent_green)
 ax_kpi3.spines['left'].set_linewidth(4)
-ax_kpi3.text(0.08, 0.65, 'CENÁRIO OTIMISTA (P90)', fontsize=9.5, color=muted_text, fontweight='bold')
+ax_kpi3.text(0.08, 0.65, 'CENÁRIO OTIMISTA (P90)', fontsize=11, color=muted_text, fontweight='bold')
 ax_kpi3.text(0.08, 0.18, f'{p90} Gols', fontsize=20, color=accent_green, fontweight='black')
 
 # --- GRÁFICO PRINCIPAL DE DISTRIBUIÇÃO ---
@@ -118,10 +125,10 @@ bars = ax_chart.bar(gols_eixo, freq_eixo, color=secondary_blue, edgecolor=primar
 
 # Ajustar eixos do gráfico principal
 ax_chart.set_xticks(gols_eixo)
-ax_chart.set_xticklabels(gols_eixo, fontsize=10, fontweight='bold', color=light_text)
+ax_chart.set_xticklabels(gols_eixo, fontsize=12, fontweight='bold', color=light_text)
 ax_chart.set_xlim(-0.7, 20.7)
 ax_chart.set_ylim(0, max(freq_eixo) * 1.15)
-ax_chart.set_ylabel('Frequência Relativa (%)', fontsize=11, fontweight='bold', color=light_text)
+ax_chart.set_ylabel('Frequência Relativa (%)', fontsize=13, fontweight='bold', color=light_text)
 
 # Adicionar rótulos de % em cima das barras principais
 for bar in bars:
@@ -130,20 +137,20 @@ for bar in bars:
         ax_chart.annotate(f'{height:.1f}%',
                           xy=(bar.get_x() + bar.get_width() / 2, height),
                           xytext=(0, 4), textcoords="offset points",
-                          ha='center', va='bottom', fontsize=8.5, color=light_text, fontweight='semibold')
+                          ha='center', va='bottom', fontsize=10, color=light_text, fontweight='semibold')
 
 # Obter o limite superior do eixo Y para posicionar as labels no topo
 y_top_limit = ax_chart.get_ylim()[1]
 
 # Linhas verticais de referência no gráfico com rótulos posicionados no topo (evitando sobrepor barras)
 ax_chart.axvline(x=p10, color=accent_orange, linestyle=':', linewidth=1.8, alpha=0.9, zorder=5)
-ax_chart.text(p10 - 0.12, y_top_limit * 0.95, f'P10 ({p10} gols)', color=accent_orange, ha='right', fontweight='bold', fontsize=9.5)
+ax_chart.text(p10 - 0.12, y_top_limit * 0.95, f'P10 ({p10} gols)', color=accent_orange, ha='right', fontweight='bold', fontsize=11)
 
 ax_chart.axvline(x=p50, color=primary_blue, linestyle='-.', linewidth=1.8, alpha=0.9, zorder=5)
-ax_chart.text(p50 + 0.12, y_top_limit * 0.95, f'P50 ({p50} gols)', color=primary_blue, ha='left', fontweight='bold', fontsize=9.5)
+ax_chart.text(p50 + 0.12, y_top_limit * 0.95, f'P50 ({p50} gols)', color=primary_blue, ha='left', fontweight='bold', fontsize=11)
 
 ax_chart.axvline(x=p90, color=accent_green, linestyle=':', linewidth=1.8, alpha=0.9, zorder=5)
-ax_chart.text(p90 + 0.12, y_top_limit * 0.95, f'P90 ({p90} gols)', color=accent_green, ha='left', fontweight='bold', fontsize=9.5)
+ax_chart.text(p90 + 0.12, y_top_limit * 0.95, f'P90 ({p90} gols)', color=accent_green, ha='left', fontweight='bold', fontsize=11)
 
 # Linhas de probabilidade acumulada (eixo secundário)
 ax_accum = ax_chart.twinx()
@@ -160,9 +167,9 @@ acumulada_suave = np.clip(spl(gols_suave), 0, 100)
 ax_accum.plot(gols_suave, acumulada_suave, color='#0F172A', linewidth=2.0, linestyle='-', alpha=0.4, label='Prob. Acumulada')
 ax_accum.scatter(gols_eixo, acumulada_eixo, color='#0F172A', edgecolor='white', s=25, alpha=0.6, zorder=5)
 ax_accum.set_ylim(0, 105)
-ax_accum.set_ylabel('Probabilidade Acumulada (%)', fontsize=11, fontweight='bold', color=muted_text)
+ax_accum.set_ylabel('Probabilidade Acumulada (%)', fontsize=13, fontweight='bold', color=muted_text)
 ax_accum.set_yticks(np.arange(0, 101, 20))
-ax_accum.set_yticklabels([f'{y}%' for y in np.arange(0, 101, 20)], color=muted_text, fontsize=9.5)
+ax_accum.set_yticklabels([f'{y}%' for y in np.arange(0, 101, 20)], color=muted_text, fontsize=11)
 
 # --- LEGENDA TÉCNICA OBRIGATÓRIA (Rodapé) ---
 # Mantendo o texto original solicitado integralmente
@@ -174,11 +181,11 @@ rodape_texto = (
 )
 
 # Adicionar a caixa com as premissas exatamente na parte inferior da figura com fonte maior e mais grossa (otimização LinkedIn)
-plt.figtext(0.06, 0.02, rodape_texto, ha='left', fontsize=10.5, color='#0F172A', fontweight='semibold',
+plt.figtext(0.06, 0.02, rodape_texto, ha='left', fontsize=11.5, color='#0F172A', fontweight='semibold',
             bbox=dict(facecolor='#F8FAFC', edgecolor='#E2E8F0', boxstyle='round,pad=1.0', alpha=1.0))
 
 # Ajuste da disposição dos subplots para focar no gráfico e deixar espaço para o rodapé técnico
-gs.update(left=0.06, right=0.94, top=0.93, bottom=0.15, wspace=0.18, hspace=0.35)
+gs.update(left=0.06, right=0.94, top=0.93, bottom=0.17, wspace=0.18, hspace=0.35)
 
 ax_header.set_subplotspec(gs[0, :])
 ax_kpi1.set_subplotspec(gs[1, 0])
@@ -187,6 +194,6 @@ ax_kpi3.set_subplotspec(gs[1, 2])
 ax_chart.set_subplotspec(gs[2, :])
 
 # Salvar o infográfico com resolução ultra premium (400 DPI)
-output_path = 'dashboard_monte_carlo_gols.png'
+output_path = os.path.join(OUTPUT_DATA_DIR, 'dashboard_monte_carlo_gols.png')
 plt.savefig(output_path, bbox_inches='tight', facecolor=bg_color, dpi=400)
 print(f"Painel visual premium exportado com sucesso em 400 DPI: {output_path}")

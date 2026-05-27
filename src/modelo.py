@@ -1,9 +1,14 @@
 import pandas as pd
 import statsmodels.formula.api as smf
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+PROCESSED_DATA_DIR = os.path.join(BASE_DIR, 'data', 'processed')
 
 def treinar_modelo():
     print("Carregando base de dados Ouro...")
-    df = pd.read_csv('gold_brasil_partidas.csv')
+    gold_path = os.path.join(PROCESSED_DATA_DIR, 'gold_brasil_partidas.csv')
+    df = pd.read_csv(gold_path)
     
     # 1. Engenharia de Features Adicional
     # Agrupar torneios em 'Amistoso' ou 'Oficial' reduz o ruído para o modelo

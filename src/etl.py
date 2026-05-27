@@ -1,11 +1,22 @@
 import pandas as pd
 import numpy as np
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DATA_DIR = os.path.join(BASE_DIR, 'data', 'raw')
+PROCESSED_DATA_DIR = os.path.join(BASE_DIR, 'data', 'processed')
+
+os.makedirs(PROCESSED_DATA_DIR, exist_ok=True)
 
 def extract_bronze():
     print("Iniciando extração da camada Bronze...")
-    # ATENÇÃO: Verifique se o nome exato do arquivo do ranking bate com o que foi baixado
-    df_jogos = pd.read_csv('results.csv')
-    df_ranking = pd.read_csv('Fifa_ranking-2024-04-04.csv') # Pode estar como fifa_ranking-2024-04-04.csv
+    df_jogos = pd.read_csv(os.path.join(RAW_DATA_DIR, 'results.csv'))
+    
+    ranking_path = os.path.join(RAW_DATA_DIR, 'Fifa_ranking-2024-04-04.csv')
+    if not os.path.exists(ranking_path):
+        ranking_path = os.path.join(RAW_DATA_DIR, 'fifa_ranking-2024-04-04.csv')
+        
+    df_ranking = pd.read_csv(ranking_path)
     return df_jogos, df_ranking
 
 def transform_silver(df_jogos, df_ranking):
@@ -27,7 +38,6 @@ def transform_silver(df_jogos, df_ranking):
     df_br['gols_adversario'] = np.where(df_br['home_team'] == 'Brazil', df_br['away_score'], df_br['home_score'])
     
     # 4. Padronização de Nomenclatura (Dicionário De-Para)
-    # A base de jogos e a base do ranking possuem nomes diferentes para os mesmos países.
     mapa_paises = {
         'United States': 'USA',
         'South Korea': 'Korea Republic',
@@ -80,8 +90,9 @@ def main():
     df_gold = transform_gold(df_br_silver, df_ranking_silver)
     
     # Load (Salvando o artefato final)
-    df_gold.to_csv('gold_brasil_partidas.csv', index=False)
-    print("ETL Concluído! O arquivo 'gold_brasil_partidas.csv' foi gerado com sucesso.")
+    output_path = os.path.join(PROCESSED_DATA_DIR, 'gold_brasil_partidas.csv')
+    df_gold.to_csv(output_path, index=False)
+    print(f"ETL Concluído! O arquivo '{output_path}' foi gerado com sucesso.")
     print(f"Total de partidas processadas: {len(df_gold)}")
 
 if __name__ == "__main__":

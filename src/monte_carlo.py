@@ -1,7 +1,18 @@
 import numpy as np
 import pandas as pd
-from modelo import treinar_modelo
+import os
 
+try:
+    from modelo import treinar_modelo
+except ImportError:
+    from src.modelo import treinar_modelo
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RAW_DATA_DIR = os.path.join(BASE_DIR, 'data', 'raw')
+PROCESSED_DATA_DIR = os.path.join(BASE_DIR, 'data', 'processed')
+OUTPUT_DATA_DIR = os.path.join(BASE_DIR, 'data', 'output')
+
+os.makedirs(OUTPUT_DATA_DIR, exist_ok=True)
 
 # ─────────────────────────────────────────────────────────────────────────────
 # 1. Lambdas por categoria (A-E) via modelo de Regressão de Poisson
@@ -159,9 +170,13 @@ def calcular_lambdas_por_fase(df_results, df_rank, lambdas_modelo):
 # ─────────────────────────────────────────────────────────────────────────────
 def simular_gols_brasil(n_simulacoes=100_000):
     # --- Carrega dados ---
-    df_gold    = pd.read_csv('gold_brasil_partidas.csv')
-    df_results = pd.read_csv('results.csv')
-    df_rank    = pd.read_csv('fifa_ranking-2024-04-04.csv')
+    df_gold = pd.read_csv(os.path.join(PROCESSED_DATA_DIR, 'gold_brasil_partidas.csv'))
+    df_results = pd.read_csv(os.path.join(RAW_DATA_DIR, 'results.csv'))
+    
+    ranking_path = os.path.join(RAW_DATA_DIR, 'fifa_ranking-2024-04-04.csv')
+    if not os.path.exists(ranking_path):
+        ranking_path = os.path.join(RAW_DATA_DIR, 'Fifa_ranking-2024-04-04.csv')
+    df_rank = pd.read_csv(ranking_path)
 
     # --- 1. Lambdas por categoria via modelo de Poisson ---
     lambdas = extrair_lambdas_do_modelo()
@@ -244,10 +259,11 @@ def simular_gols_brasil(n_simulacoes=100_000):
         print(f"    {int(gols_val):2d} gols : {pct*100:5.1f}%  {bar}")
 
     # Exporta para visualização (Power BI / Excel)
+    output_path = os.path.join(OUTPUT_DATA_DIR, 'resultados_simulacao.csv')
     pd.DataFrame({'gols_totais': gols_totais_simulados}).to_csv(
-        'resultados_simulacao.csv', index=False
+        output_path, index=False
     )
-    print("\nArquivo 'resultados_simulacao.csv' exportado com sucesso.")
+    print(f"\nArquivo '{output_path}' exportado com sucesso.")
     return gols_totais_simulados
 
 

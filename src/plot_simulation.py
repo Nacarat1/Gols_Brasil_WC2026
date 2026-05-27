@@ -2,14 +2,21 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 from scipy.interpolate import make_interp_spline
+import os
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+OUTPUT_DATA_DIR = os.path.join(BASE_DIR, 'data', 'output')
 
 # 1. Carregar os dados simulados
 try:
-    df = pd.read_csv('resultados_simulacao.csv')
+    df = pd.read_csv(os.path.join(OUTPUT_DATA_DIR, 'resultados_simulacao.csv'))
     gols = df['gols_totais'].values
 except FileNotFoundError:
     print("Executando a simulação primeiro para gerar resultados_simulacao.csv...")
-    import monte_carlo
+    try:
+        import monte_carlo
+    except ImportError:
+        from src import monte_carlo
     gols = monte_carlo.simular_gols_brasil()
     gols = np.array(gols)
 
@@ -108,19 +115,7 @@ ax1.text(p90 + 0.1, ax1.get_ylim()[1] * 0.93, f'P90 = {p90}', color='#8E44AD', h
 # Título Principal e Legenda do Gráfico
 plt.title('Simulação Monte Carlo — Gols do Brasil na Copa 2026', fontsize=16, fontweight='bold', pad=25, color=accent_color)
 
-# Rodapé com Premissas (Exatamente como o rodapé original do Power BI/Excel)
-# Premissas reais do modelo do usuário:
-# Lambdas das categorias: E, D, C, B, A
-# Marrocos (A) = 1.15, Haiti (E) = 2.601, Escócia (C) = 1.905
-# Probabilidade de jogar cada fase/quantidade de partidas: 3, 4, 5, 6, 8
-# Vamos calcular as probabilidades reais encontradas na simulação
-jogos_serie = pd.Series(gols)
-# Como gols foi gerado como soma simples condicional, vamos rodar uma contagem rápida no monte carlo para pegar a prob do jogo
-# Mas podemos puxar diretamente do script de simulação.
-# Vamos rodar uma análise de porcentagem rápida para as premissas:
-total_sim = len(gols)
-probs_fases_str = "Prob. de Jogar = [100% em 3j | 93.3% em 4j+ | 73.3% em 5j+ | 53.3% em 6j+ | 33.3% em 8j]" # Exemplo ilustrativo próximo ao histórico
-# Vamos colocar a legenda técnica
+# Rodapé com Premissas
 rodape_texto = (
     "Premissas do Modelo:\n"
     "• Lambdas por Categoria: A = 1.15 | B = 1.45 | C = 1.90 | D = 1.70 | E = 2.60  (Treinados com histórico do Brasil no séc. XXI)\n"
@@ -136,6 +131,6 @@ plt.figtext(0.1, 0.01, rodape_texto, ha='left', fontsize=8.5, color='#555555',
 plt.subplots_adjust(bottom=0.20, top=0.90)
 
 # Salvar gráfico em formato PNG de alta resolução para o post
-output_image_path = 'simulacao_monte_carlo_gols_brasil.png'
+output_image_path = os.path.join(OUTPUT_DATA_DIR, 'simulacao_monte_carlo_gols_brasil.png')
 plt.savefig(output_image_path, bbox_inches='tight', dpi=300)
 print(f"Gráfico salvo com sucesso em: {output_image_path}")
